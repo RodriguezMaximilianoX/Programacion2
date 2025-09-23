@@ -35,7 +35,29 @@ public class TrabajoPractico2_ProgramacionEstructurada {
     }
     */
     
+    /*
+    Escribe un programa en Java que pida al usuario tres números enteros y
+    determine cuál es el mayor.
+    */
+    Scanner input = new Scanner(System.in);
+    int x, y, z, mayor; 
+    System.out.println("Ingrese el primer numero: ");
+    x = Integer.parseInt(input.nextLine());
+    System.out.println("Ingrese el segundo numero: ");
+    y = Integer.parseInt(input.nextLine());
+    System.out.println("Ingrese el tercer numero: ");
+    z = Integer.parseInt(input.nextLine());
+        
+        mayor = x;
     
-    
+        if (y > mayor) {
+            mayor = y;
+        }
+        if (z > mayor) {
+            mayor = z;
+        }
+        
+        System.out.println("El mayor numero es " + mayor);
     }
+    
 }
